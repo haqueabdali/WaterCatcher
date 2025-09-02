@@ -27,10 +27,12 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim fade_in
 anim fragment_fast_out_extra_slow_in
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
+anim scale_up
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -2466,6 +2468,8 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_sad_jar
+drawable ic_trophy
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2764,6 +2768,8 @@ id line3
 id linear
 id listMode
 id list_item
+id loseJar
+id loseText
 id masked
 id match_constraint
 id match_parent
@@ -3003,6 +3009,8 @@ id visible
 id visible_removing_fragment_view_tag
 id waterView
 id west
+id winText
+id winTrophy
 id withText
 id withinBounds
 id wrap
@@ -3104,9 +3112,11 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_game
+layout activity_lose
 layout activity_main
 layout activity_sensor_info
 layout activity_settings
+layout activity_win
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

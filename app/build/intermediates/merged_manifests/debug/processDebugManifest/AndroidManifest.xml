@@ -18,6 +18,8 @@
         android:testOnly="true"
         android:theme="@style/Theme.WaterCatcher" >
         <activity android:name="com.example.watercatcher.SensorInfoActivity" />
+        <activity android:name="com.example.watercatcher.LoseActivity" />
+        <activity android:name="com.example.watercatcher.WinActivity" />
         <activity android:name="com.example.watercatcher.SettingsActivity" />
         <activity android:name="com.example.watercatcher.GameActivity" />
         <activity

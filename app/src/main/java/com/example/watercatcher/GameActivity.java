@@ -66,11 +66,15 @@ public class GameActivity extends AppCompatActivity implements SensorEventListen
     private void endGame(boolean win, int score) {
         if (ended) return;
         ended = true;
-        if (timer != null) timer.cancel();
-        Intent data = new Intent();
-        data.putExtra("score", score);
-        data.putExtra("win", win);
-        setResult(RESULT_OK, data);
+        if (score >= 100) {
+            Intent winIntent = new Intent(GameActivity.this, WinActivity.class);
+            startActivity(winIntent);
+
+        } else {
+            Intent loseIntent = new Intent(GameActivity.this, LoseActivity.class);
+
+            startActivity(loseIntent);
+        }
         finish();
     }
 
