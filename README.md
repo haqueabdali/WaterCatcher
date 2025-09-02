@@ -1,4 +1,4 @@
-# WaterCatcher — Error-free Project (v2)
+# WaterCatcher —  (v1)
 
 This Android Studio project (Java) implements the WaterCatcher game:
 - Target: Android 12 (API 32)
@@ -7,7 +7,7 @@ This Android Studio project (Java) implements the WaterCatcher game:
 - Game rules:
   * Jar moves randomly vertically
   * Drops spawn only on touch
-  * 30s countdown timer
+  * 10s countdown timer
   * Win at 100 captured drops, otherwise lose
   * Game returns result (score, win) to MainActivity
 
