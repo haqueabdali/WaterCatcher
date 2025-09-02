@@ -1,0 +1,104 @@
+package com.example.watercatcher;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Context;
+import android.content.Intent;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
+import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.widget.TextView;
+
+public class GameActivity extends AppCompatActivity implements SensorEventListener {
+
+    private WaterDropView waterView;
+    private TextView tvScore;
+    private SensorManager sensorManager;
+    private Sensor accel, light;
+    private CountDownTimer timer;
+    private boolean ended = false;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_game);
+
+        waterView = findViewById(R.id.waterView);
+        tvScore = findViewById(R.id.tvScore);
+
+        int dropSize = getIntent().getIntExtra("dropSize", 30);
+        int sensitivity = getIntent().getIntExtra("sensitivity", 5);
+        waterView.configure(dropSize, sensitivity,
+                score -> runOnUiThread(() -> tvScore.setText("Score: " + score + " | Time: 30")),
+                this::winAndFinish);
+
+        sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        accel = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        light = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
+
+        startTimer();
+    }
+
+    private void startTimer() {
+        if (timer != null) timer.cancel();
+        timer = new CountDownTimer(30000, 1000) {
+            public void onTick(long millisUntilFinished) {
+                int secs = (int)(millisUntilFinished / 1000);
+                tvScore.setText("Score: " + waterView.getScore() + " | Time: " + secs);
+            }
+            public void onFinish() {
+                if (!ended) loseAndFinish();
+            }
+        }.start();
+    }
+
+    private void winAndFinish(int score) {
+        endGame(true, score);
+    }
+
+    private void loseAndFinish() {
+        endGame(false, waterView.getScore());
+    }
+
+    private void endGame(boolean win, int score) {
+        if (ended) return;
+        ended = true;
+        if (timer != null) timer.cancel();
+        Intent data = new Intent();
+        data.putExtra("score", score);
+        data.putExtra("win", win);
+        setResult(RESULT_OK, data);
+        finish();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        waterView.resume();
+        if (accel != null) sensorManager.registerListener(this, accel, SensorManager.SENSOR_DELAY_GAME);
+        if (light != null) sensorManager.registerListener(this, light, SensorManager.SENSOR_DELAY_NORMAL);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        waterView.pause();
+        sensorManager.unregisterListener(this);
+        if (timer != null) timer.cancel();
+    }
+
+    @Override
+    public void onSensorChanged(android.hardware.SensorEvent event) {
+        if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
+            waterView.setTilt(-event.values[0], event.values[1]);
+        } else if (event.sensor.getType() == Sensor.TYPE_LIGHT) {
+            waterView.setAmbientLight(event.values[0]);
+        }
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {}
+}
