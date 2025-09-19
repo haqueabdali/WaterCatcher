@@ -2443,6 +2443,7 @@ int drawable abc_textfield_search_activated_mtrl_alpha 0x7f070051
 int drawable abc_textfield_search_default_mtrl_alpha 0x7f070052
 int drawable abc_textfield_search_material 0x7f070053
 int drawable abc_vector_test 0x7f070054
+int drawable app_logo 0x7f07009c
 int drawable avd_hide_password 0x7f070055
 int drawable avd_show_password 0x7f070056
 int drawable btn_checkbox_checked_mtrl 0x7f070057

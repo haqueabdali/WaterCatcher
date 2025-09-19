@@ -1,9 +1,5 @@
 [
     {
-        "merged": "com.example.watercatcher.app-debug-24:/drawable_ic_trophy.xml.flat",
-        "source": "com.example.watercatcher.app-main-26:/drawable/ic_trophy.xml"
-    },
-    {
         "merged": "com.example.watercatcher.app-debug-24:/layout_activity_lose.xml.flat",
         "source": "com.example.watercatcher.app-main-26:/layout/activity_lose.xml"
     },
@@ -12,12 +8,28 @@
         "source": "com.example.watercatcher.app-main-26:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.watercatcher.app-debug-24:/layout_activity_game.xml.flat",
-        "source": "com.example.watercatcher.app-main-26:/layout/activity_game.xml"
-    },
-    {
         "merged": "com.example.watercatcher.app-debug-24:/anim_fade_in.xml.flat",
         "source": "com.example.watercatcher.app-main-26:/anim/fade_in.xml"
+    },
+    {
+        "merged": "com.example.watercatcher.app-debug-24:/drawable_app_logo.png.flat",
+        "source": "com.example.watercatcher.app-main-26:/drawable/app_logo.png"
+    },
+    {
+        "merged": "com.example.watercatcher.app-debug-24:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.watercatcher.app-main-26:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.watercatcher.app-debug-24:/layout_activity_settings.xml.flat",
+        "source": "com.example.watercatcher.app-main-26:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.example.watercatcher.app-debug-24:/drawable_ic_trophy.xml.flat",
+        "source": "com.example.watercatcher.app-main-26:/drawable/ic_trophy.xml"
+    },
+    {
+        "merged": "com.example.watercatcher.app-debug-24:/layout_activity_game.xml.flat",
+        "source": "com.example.watercatcher.app-main-26:/layout/activity_game.xml"
     },
     {
         "merged": "com.example.watercatcher.app-debug-24:/layout_activity_win.xml.flat",
@@ -34,13 +46,5 @@
     {
         "merged": "com.example.watercatcher.app-debug-24:/drawable_ic_sad_jar.xml.flat",
         "source": "com.example.watercatcher.app-main-26:/drawable/ic_sad_jar.xml"
-    },
-    {
-        "merged": "com.example.watercatcher.app-debug-24:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.watercatcher.app-main-26:/mipmap-anydpi-v26/ic_launcher.xml"
-    },
-    {
-        "merged": "com.example.watercatcher.app-debug-24:/layout_activity_settings.xml.flat",
-        "source": "com.example.watercatcher.app-main-26:/layout/activity_settings.xml"
     }
 ]
