@@ -4,7 +4,17 @@
             "outputFile": "com.example.watercatcher.app-mergeDebugResources-22:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\PC\\.gradle\\caches\\8.11.1\\transforms\\6cc94e7649bb1f8147ad1e9b2981eba6\\transformed\\appcompat-1.4.2\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\PC\\.gradle\\caches\\8.11.1\\transforms\\5da7376a18806caecf9f511192ba464c\\transformed\\core-1.7.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\PC\\.gradle\\caches\\8.11.1\\transforms\\3eccce853f93688b4f24e0ab3e60cec5\\transformed\\appcompat-1.4.2\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\PC\\.gradle\\caches\\8.11.1\\transforms\\992470494429298adf6c6daba9cf5daa\\transformed\\core-1.7.0\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

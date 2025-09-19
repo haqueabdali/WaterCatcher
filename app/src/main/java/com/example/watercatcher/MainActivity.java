@@ -24,12 +24,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Ensure this layout name matches your XML file name from Step 1
         setContentView(R.layout.activity_main);
 
         tvHighScore = findViewById(R.id.tvHighScore);
         Button btnStart = findViewById(R.id.btnStart);
         Button btnSettings = findViewById(R.id.btnSettings);
         Button btnSensors = findViewById(R.id.btnSensors);
+        Button btnExit = findViewById(R.id.btnExit); // Find the Exit button by its ID
 
         SharedPreferences sp = getSharedPreferences(PREFS, MODE_PRIVATE);
         highScore = sp.getInt("highScore", 0);
@@ -51,6 +53,14 @@ public class MainActivity extends AppCompatActivity {
 
         btnSensors.setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, SensorInfoActivity.class));
+        });
+
+        // Exit Button Logic
+        btnExit.setOnClickListener(v -> {
+            finishAffinity(); // Finishes this activity and all activities immediately below it
+            // in the current task that have the same affinity.
+            // Effectively closes the app if this is the main task.
+            // System.exit(0); // For a more forceful JVM exit, if absolutely necessary.
         });
     }
 
@@ -77,13 +87,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "🎉 You win! Score: " + score, Toast.LENGTH_LONG).show();
             } else {
                 Toast.makeText(this, "⏰ Time over! Score: " + score, Toast.LENGTH_LONG).show();
-            }
-            // implicit intent: share best score
-            if (score == highScore) {
-                Intent shareIntent = new Intent(Intent.ACTION_SEND);
-                shareIntent.setType("text/plain");
-                shareIntent.putExtra(Intent.EXTRA_TEXT, "I scored " + score + " in WaterCatcher!");
-                startActivity(Intent.createChooser(shareIntent, getString(R.string.share)));
             }
         }
     }

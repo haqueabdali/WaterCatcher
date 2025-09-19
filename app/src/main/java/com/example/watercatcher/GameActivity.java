@@ -32,7 +32,7 @@ public class GameActivity extends AppCompatActivity implements SensorEventListen
         int dropSize = getIntent().getIntExtra("dropSize", 10);
         int sensitivity = getIntent().getIntExtra("sensitivity", 10);
         waterView.configure(dropSize, sensitivity,
-                score -> runOnUiThread(() -> tvScore.setText("Score: " + score + " | Time: 03")),
+                score -> runOnUiThread(() -> tvScore.setText("Score: " + score )),
                 this::winAndFinish);
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
@@ -47,7 +47,7 @@ public class GameActivity extends AppCompatActivity implements SensorEventListen
         timer = new CountDownTimer(10000, 1000) {
             public void onTick(long millisUntilFinished) {
                 int secs = (int)(millisUntilFinished / 1000);
-                tvScore.setText("Score: " + waterView.getScore() + " | Time: " + secs);
+                tvScore.setText("Score: " + waterView.getScore() + " | Time: ");
             }
             public void onFinish() {
                 if (!ended) loseAndFinish();

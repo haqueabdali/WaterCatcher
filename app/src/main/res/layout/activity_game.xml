@@ -12,8 +12,9 @@
         android:id="@+id/tvScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Score: 0 | Time: 30"
+        android:text="Score: 0 | Time: 0"
         android:textSize="18sp"
         android:padding="8dp"
-        android:background="#55FFFFFF"/>
+        android:background="#55FFFFFF"
+        android:layout_marginTop="16dp"/>
 </FrameLayout>

@@ -1,8 +1,8 @@
 // Top-level build.gradle
 
 plugins {
-    id 'com.android.application' version '8.8.2' apply false
-    id 'com.android.library' version '8.8.2' apply false
+    id 'com.android.application' version '8.9.0-rc02' apply false
+    id 'com.android.library' version '8.9.0-rc02' apply false
 }
 
 task clean(type: Delete) {

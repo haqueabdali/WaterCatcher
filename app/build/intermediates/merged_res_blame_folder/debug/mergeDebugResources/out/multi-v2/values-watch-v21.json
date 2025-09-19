@@ -4,7 +4,7 @@
             "outputFile": "com.example.watercatcher.app-mergeDebugResources-22:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\PC\\.gradle\\caches\\8.11.1\\transforms\\6cc94e7649bb1f8147ad1e9b2981eba6\\transformed\\appcompat-1.4.2\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\PC\\.gradle\\caches\\8.11.1\\transforms\\3eccce853f93688b4f24e0ab3e60cec5\\transformed\\appcompat-1.4.2\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

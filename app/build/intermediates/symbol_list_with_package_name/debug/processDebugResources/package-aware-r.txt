@@ -2614,6 +2614,7 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnCancel
+id btnExit
 id btnSave
 id btnSensors
 id btnSettings
@@ -2991,6 +2992,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvAccel
+id tvGameTitle
 id tvHighScore
 id tvLight
 id tvScore
