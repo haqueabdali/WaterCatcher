@@ -47,7 +47,7 @@ public class GameActivity extends AppCompatActivity implements SensorEventListen
         timer = new CountDownTimer(10000, 1000) {
             public void onTick(long millisUntilFinished) {
                 int secs = (int)(millisUntilFinished / 1000);
-                tvScore.setText("Score: " + waterView.getScore() + " | Time: ");
+                tvScore.setText("Score: " + waterView.getScore() + " | Time: " + secs);
             }
             public void onFinish() {
                 if (!ended) loseAndFinish();
@@ -66,13 +66,13 @@ public class GameActivity extends AppCompatActivity implements SensorEventListen
     private void endGame(boolean win, int score) {
         if (ended) return;
         ended = true;
-        if (score >= 100) {
+        if (score >= 100) { // Assuming 100 is the winning condition, adjust as needed
             Intent winIntent = new Intent(GameActivity.this, WinActivity.class);
+            winIntent.putExtra("finalScore", score); // Pass the score
             startActivity(winIntent);
-
         } else {
             Intent loseIntent = new Intent(GameActivity.this, LoseActivity.class);
-
+            loseIntent.putExtra("finalScore", score); // Pass the score
             startActivity(loseIntent);
         }
         finish();

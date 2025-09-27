@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:gravity="center"
-    android:background="@android:color/black">
+    android:background="#000000">
 
     <ImageView
         android:id="@+id/winTrophy"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:src="@drawable/ic_trophy"
-        android:layout_centerInParent="true" />
+        android:src="@drawable/trophy" />
 
     <TextView
         android:id="@+id/winText"
@@ -19,7 +19,5 @@
         android:text="YOU WIN!"
         android:textSize="32sp"
         android:textColor="@android:color/white"
-        android:layout_below="@id/winTrophy"
-        android:layout_centerHorizontal="true"
-        android:paddingTop="20dp"/>
-</RelativeLayout>
+        android:layout_marginTop="24dp"/>
+</LinearLayout>
