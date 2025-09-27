@@ -1,20 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/gameLayout"
+    android:background="@android:color/white">
 
-    <com.example.watercatcher.WaterDropView
-        android:id="@+id/waterView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 
-    <TextView
-        android:id="@+id/tvScore"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Score: 0 | Time: 0"
-        android:textSize="18sp"
-        android:padding="8dp"
-        android:background="#55FFFFFF"
-        android:layout_marginTop="16dp"/>
+<ImageView
+    android:id="@+id/jar"
+    android:layout_width="100dp"
+    android:layout_height="120dp"
+    android:src="@drawable/jar"
+    android:layout_gravity="bottom|center_horizontal"/>
+
+<TextView
+    android:id="@+id/scoreText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Score: 0"
+    android:textSize="20sp"
+    android:textColor="@android:color/black"
+    android:layout_margin="16dp"
+    android:layout_gravity="top|start"/>
+
+<TextView
+    android:id="@+id/timerText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Time: 30s"
+    android:textSize="20sp"
+    android:textColor="@android:color/black"
+    android:layout_margin="16dp"
+    android:layout_gravity="top|end"/>
 </FrameLayout>

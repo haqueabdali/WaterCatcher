@@ -1,0 +1,11 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Blue water drop -->
+    <path
+        android:fillColor="#8000BFFF"
+        android:pathData="M12,2C10,6 6,10 6,15a6,6 0 0,0 12,0c0,-5 -4,-9 -6,-13z"/>
+</vector>
