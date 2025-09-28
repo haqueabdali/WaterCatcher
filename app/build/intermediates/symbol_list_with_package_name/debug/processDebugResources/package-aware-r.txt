@@ -2940,12 +2940,14 @@ id src_in
 id src_over
 id standard
 id start
+id startButton
 id startHorizontal
 id startToEnd
 id startVertical
 id staticLayout
 id staticPostLayout
 id stop
+id storyText
 id stretch
 id submenuarrow
 id submit_area
@@ -3127,6 +3129,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_game
+layout activity_intro
 layout activity_lose
 layout activity_main
 layout activity_sensor_info

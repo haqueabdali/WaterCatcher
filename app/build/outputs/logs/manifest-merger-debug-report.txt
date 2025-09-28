@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:2:1-24:12
+ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:2:1-31:12
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\PC\.gradle\caches\8.11.1\transforms\59e4d10071db588ee63bcacb408a9415\transformed\material-1.6.1\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\PC\.gradle\caches\8.11.1\transforms\ee933dea4ca396ffcb24722ff6e1d646\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.4.2] C:\Users\PC\.gradle\caches\8.11.1\transforms\3eccce853f93688b4f24e0ab3e60cec5\transformed\appcompat-1.4.2\AndroidManifest.xml:17:1-24:12
@@ -52,8 +52,8 @@ MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\PC\.gra
 	xmlns:android
 		ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:4:5-23:19
-INJECTED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:4:5-23:19
+ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:4:5-30:19
+INJECTED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:4:5-30:19
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\PC\.gradle\caches\8.11.1\transforms\59e4d10071db588ee63bcacb408a9415\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\PC\.gradle\caches\8.11.1\transforms\59e4d10071db588ee63bcacb408a9415\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\PC\.gradle\caches\8.11.1\transforms\ee933dea4ca396ffcb24722ff6e1d646\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -102,22 +102,28 @@ activity#com.example.watercatcher.GameActivity
 ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:14:9-50
 	android:name
 		ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:14:19-47
-activity#com.example.watercatcher.MainActivity
-ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:15:9-22:20
+activity#com.example.watercatcher.IntroActivity
+ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:15:9-21:20
 	android:exported
-		ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:17:13-36
+		ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:16:13-36
 	android:name
-		ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:16:13-41
+		ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:15:19-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:18:13-21:29
+ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:17:13-20:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:19:17-69
+ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:19:25-66
+		ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:20:17-77
+ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:20:27-74
+		ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:19:27-74
+activity#com.example.watercatcher.MainActivity
+ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:22:9-29:20
+	android:exported
+		ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:24:13-36
+	android:name
+		ADDED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml:23:13-41
 uses-sdk
 INJECTED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\PC\Desktop\wcatcher\app\src\main\AndroidManifest.xml
