@@ -16,8 +16,8 @@
         android:id="@+id/winText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="YOU WIN!"
-        android:textSize="32sp"
+        android:text="🐠 Yay! You did it!Your fish splashes happily inside her jar:“Thank you for saving me! Now I can swim again!”She wiggles her tail and blows a bubbly “thank you” kiss 💕"
+        android:textSize="20sp"
         android:textColor="@android:color/white"
         android:layout_marginTop="24dp"/>
 </LinearLayout>

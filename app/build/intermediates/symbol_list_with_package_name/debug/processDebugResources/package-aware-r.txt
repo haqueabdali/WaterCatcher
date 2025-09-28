@@ -3002,9 +3002,14 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvAccel
+id tvDropSizeLabel
 id tvGameTitle
 id tvHighScore
 id tvLight
+id tvSensitivityLabel
+id tvSettingsTitle
+id txtDropValue
+id txtSensValue
 id unchecked
 id uniform
 id unlabeled

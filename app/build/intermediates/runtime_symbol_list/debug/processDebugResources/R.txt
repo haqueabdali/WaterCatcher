@@ -3001,9 +3001,14 @@ int id transition_scene_layoutid_cache 0x7f0801dd
 int id transition_transform 0x7f0801de
 int id triangle 0x7f0801df
 int id tvAccel 0x7f0801e0
+int id tvDropSizeLabel 0x7f0801fc
 int id tvGameTitle 0x7f0801e1
 int id tvHighScore 0x7f0801e2
 int id tvLight 0x7f0801e3
+int id tvSensitivityLabel 0x7f0801fd
+int id tvSettingsTitle 0x7f0801fe
+int id txtDropValue 0x7f0801ff
+int id txtSensValue 0x7f080200
 int id unchecked 0x7f0801e4
 int id uniform 0x7f0801e5
 int id unlabeled 0x7f0801e6

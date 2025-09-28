@@ -33,9 +33,9 @@ public class GameActivity extends AppCompatActivity {
     private static final int GAME_DURATION = 10000; // 10 seconds
     private static final int WIN_SCORE = 100;
 
-    // drop settings
-    private static final int DROP_SIZE = 60;
-    private static final int DROP_SPEED = 40;  // higher = faster falling
+    // settings
+    private int dropSize;   // from Settings
+    private int dropSpeed;  // based on sensitivity
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -48,9 +48,16 @@ public class GameActivity extends AppCompatActivity {
         scoreText = findViewById(R.id.scoreText);
         timerText = findViewById(R.id.timerText);
 
+        // 🎛 get settings from MainActivity
+        dropSize = getIntent().getIntExtra("dropSize", 60);
+        int sensitivity = getIntent().getIntExtra("sensitivity", 5);
+
+        // map sensitivity → drop speed (higher = faster)
+        dropSpeed = Math.max(5, sensitivity * 10);
+
         startGame();
 
-        // 🟢 Spawn drop at touch location (X & Y)
+        // 🟢 spawn drop at touch location
         gameLayout.setOnTouchListener((v, event) -> {
             if ((event.getAction() == MotionEvent.ACTION_DOWN ||
                     event.getAction() == MotionEvent.ACTION_MOVE) && gameRunning) {
@@ -65,8 +72,8 @@ public class GameActivity extends AppCompatActivity {
         scoreText.setText("Score: 0");
         gameRunning = true;
 
-        // Start countdown
-        countDownTimer = new CountDownTimer(GAME_DURATION, 16) { // ~60fps
+        // countdown ~60fps
+        countDownTimer = new CountDownTimer(GAME_DURATION, 16) {
             @Override
             public void onTick(long millisUntilFinished) {
                 int seconds = (int) (millisUntilFinished / 1000);
@@ -81,7 +88,7 @@ public class GameActivity extends AppCompatActivity {
             }
         }.start();
 
-        // Animate jar horizontally every second (auto-move)
+        // animate jar horizontally every second
         jar.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -95,31 +102,31 @@ public class GameActivity extends AppCompatActivity {
         }, 1000);
     }
 
-    // 🟢 Drop spawns where you touch (X & Y coordinate)
+    // 🟢 spawn drop where touched
     private void spawnDrop(int touchX, int touchY) {
         if (gameLayout.getWidth() == 0 || gameLayout.getHeight() == 0) return;
 
         ImageView drop = new ImageView(this);
-        drop.setImageResource(R.drawable.ic_water_drop); // make sure this drawable exists
-        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(DROP_SIZE, DROP_SIZE);
+        drop.setImageResource(R.drawable.ic_water_drop); // make sure drawable exists
+        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(dropSize, dropSize);
         drop.setLayoutParams(params);
 
-        // Clamp X so it doesn’t go outside screen
-        int startX = touchX - (DROP_SIZE / 2);
+        // clamp X
+        int startX = touchX - (dropSize / 2);
         if (startX < 0) startX = 0;
-        if (startX > gameLayout.getWidth() - DROP_SIZE) {
-            startX = gameLayout.getWidth() - DROP_SIZE;
+        if (startX > gameLayout.getWidth() - dropSize) {
+            startX = gameLayout.getWidth() - dropSize;
         }
 
-        // Clamp Y so it doesn’t go outside screen
-        int startY = touchY - (DROP_SIZE / 2);
+        // clamp Y
+        int startY = touchY - (dropSize / 2);
         if (startY < 0) startY = 0;
-        if (startY > gameLayout.getHeight() - DROP_SIZE) {
-            startY = gameLayout.getHeight() - DROP_SIZE;
+        if (startY > gameLayout.getHeight() - dropSize) {
+            startY = gameLayout.getHeight() - dropSize;
         }
 
         drop.setX(startX);
-        drop.setY(startY); // 🟢 now spawns exactly at touch
+        drop.setY(startY);
 
         gameLayout.addView(drop);
         drops.add(drop);
@@ -129,7 +136,7 @@ public class GameActivity extends AppCompatActivity {
         Iterator<ImageView> iterator = drops.iterator();
         while (iterator.hasNext()) {
             ImageView drop = iterator.next();
-            drop.setY(drop.getY() + DROP_SPEED);
+            drop.setY(drop.getY() + dropSpeed);
 
             if (checkCollision(drop, jar)) {
                 score++;
@@ -163,12 +170,17 @@ public class GameActivity extends AppCompatActivity {
 
     private void endGame() {
         Intent intent;
-        if (score >= WIN_SCORE) {
+        boolean win = score >= WIN_SCORE;
+
+        if (win) {
             intent = new Intent(GameActivity.this, WinActivity.class);
         } else {
             intent = new Intent(GameActivity.this, LoseActivity.class);
         }
-        intent.putExtra("finalScore", score);
+        intent.putExtra("score", score);
+        intent.putExtra("win", win);
+
+        setResult(RESULT_OK, intent);
         startActivity(intent);
         finish();
     }
