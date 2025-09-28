@@ -1,114 +1,110 @@
 [
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\mipmap-xhdpi_w_logo_foreground.webp.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\mipmap-xhdpi\\w_logo_foreground.webp"
+        "merged": "com.example.watercatcher.app-debug-24:/layout_activity_lose.xml.flat",
+        "source": "com.example.watercatcher.app-main-26:/layout/activity_lose.xml"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\mipmap-xxxhdpi_w_logo_foreground.webp.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\mipmap-xxxhdpi\\w_logo_foreground.webp"
+        "merged": "com.example.watercatcher.app-debug-24:/drawable_sad_trophy.png.flat",
+        "source": "com.example.watercatcher.app-main-26:/drawable/sad_trophy.png"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\drawable_ic_trophy.xml.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\drawable\\ic_trophy.xml"
+        "merged": "com.example.watercatcher.app-debug-24:/drawable_jar.png.flat",
+        "source": "com.example.watercatcher.app-main-26:/drawable/jar.png"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\drawable_jar.png.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\drawable\\jar.png"
-    },
-    {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\layout_activity_win.xml.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\layout\\activity_win.xml"
-    },
-    {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\layout_activity_settings.xml.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\layout\\activity_settings.xml"
-    },
-    {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\mipmap-anydpi-v26_w_logo_round.xml.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\mipmap-anydpi-v26\\w_logo_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\mipmap-hdpi_w_logo_foreground.webp.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\mipmap-hdpi\\w_logo_foreground.webp"
-    },
-    {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\anim_scale_up.xml.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\anim\\scale_up.xml"
+        "merged": "com.example.watercatcher.app-debug-24:/mipmap-xxhdpi_w_logo_round.webp.flat",
+        "source": "com.example.watercatcher.app-main-26:/mipmap-xxhdpi/w_logo_round.webp"
     },
     {
         "merged": "com.example.watercatcher.app-debug-24:/layout_activity_settings.xml.flat",
         "source": "com.example.watercatcher.app-main-26:/layout/activity_settings.xml"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\mipmap-xhdpi_w_logo_round.webp.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\mipmap-xhdpi\\w_logo_round.webp"
+        "merged": "com.example.watercatcher.app-debug-24:/layout_activity_game.xml.flat",
+        "source": "com.example.watercatcher.app-main-26:/layout/activity_game.xml"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\mipmap-mdpi_w_logo_round.webp.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\mipmap-mdpi\\w_logo_round.webp"
+        "merged": "com.example.watercatcher.app-debug-24:/layout_activity_win.xml.flat",
+        "source": "com.example.watercatcher.app-main-26:/layout/activity_win.xml"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\mipmap-xxhdpi_w_logo_round.webp.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\mipmap-xxhdpi\\w_logo_round.webp"
+        "merged": "com.example.watercatcher.app-debug-24:/drawable_ic_water_drop.xml.flat",
+        "source": "com.example.watercatcher.app-main-26:/drawable/ic_water_drop.xml"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\drawable_ic_sad_jar.xml.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\drawable\\ic_sad_jar.xml"
+        "merged": "com.example.watercatcher.app-debug-24:/mipmap-anydpi-v26_w_logo_round.xml.flat",
+        "source": "com.example.watercatcher.app-main-26:/mipmap-anydpi-v26/w_logo_round.xml"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\mipmap-mdpi_w_logo_foreground.webp.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\mipmap-mdpi\\w_logo_foreground.webp"
+        "merged": "com.example.watercatcher.app-debug-24:/anim_scale_up.xml.flat",
+        "source": "com.example.watercatcher.app-main-26:/anim/scale_up.xml"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\mipmap-xxhdpi_w_logo_foreground.webp.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\mipmap-xxhdpi\\w_logo_foreground.webp"
+        "merged": "com.example.watercatcher.app-debug-24:/drawable_ic_sad_jar.xml.flat",
+        "source": "com.example.watercatcher.app-main-26:/drawable/ic_sad_jar.xml"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "com.example.watercatcher.app-debug-24:/mipmap-xhdpi_w_logo_foreground.webp.flat",
+        "source": "com.example.watercatcher.app-main-26:/mipmap-xhdpi/w_logo_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\layout\\activity_main.xml"
+        "merged": "com.example.watercatcher.app-debug-24:/mipmap-xxxhdpi_w_logo_round.webp.flat",
+        "source": "com.example.watercatcher.app-main-26:/mipmap-xxxhdpi/w_logo_round.webp"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\layout_activity_sensor_info.xml.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\layout\\activity_sensor_info.xml"
+        "merged": "com.example.watercatcher.app-debug-24:/drawable_trophy.png.flat",
+        "source": "com.example.watercatcher.app-main-26:/drawable/trophy.png"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\layout_activity_game.xml.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\layout\\activity_game.xml"
+        "merged": "com.example.watercatcher.app-debug-24:/mipmap-xxhdpi_w_logo_foreground.webp.flat",
+        "source": "com.example.watercatcher.app-main-26:/mipmap-xxhdpi/w_logo_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\mipmap-hdpi_w_logo_round.webp.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\mipmap-hdpi\\w_logo_round.webp"
+        "merged": "com.example.watercatcher.app-debug-24:/mipmap-hdpi_w_logo_round.webp.flat",
+        "source": "com.example.watercatcher.app-main-26:/mipmap-hdpi/w_logo_round.webp"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\drawable_ic_water_drop.xml.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\drawable\\ic_water_drop.xml"
+        "merged": "com.example.watercatcher.app-debug-24:/drawable_jar_round_bg.xml.flat",
+        "source": "com.example.watercatcher.app-main-26:/drawable/jar_round_bg.xml"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\layout_activity_lose.xml.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\layout\\activity_lose.xml"
+        "merged": "com.example.watercatcher.app-debug-24:/mipmap-mdpi_w_logo_round.webp.flat",
+        "source": "com.example.watercatcher.app-main-26:/mipmap-mdpi/w_logo_round.webp"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\drawable_sad_trophy.png.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\drawable\\sad_trophy.png"
+        "merged": "com.example.watercatcher.app-debug-24:/layout_activity_main.xml.flat",
+        "source": "com.example.watercatcher.app-main-26:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\anim_fade_in.xml.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\anim\\fade_in.xml"
+        "merged": "com.example.watercatcher.app-debug-24:/anim_fade_in.xml.flat",
+        "source": "com.example.watercatcher.app-main-26:/anim/fade_in.xml"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\mipmap-xxxhdpi_w_logo_round.webp.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\mipmap-xxxhdpi\\w_logo_round.webp"
+        "merged": "com.example.watercatcher.app-debug-24:/mipmap-xxxhdpi_w_logo_foreground.webp.flat",
+        "source": "com.example.watercatcher.app-main-26:/mipmap-xxxhdpi/w_logo_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\drawable_trophy.png.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\drawable\\trophy.png"
+        "merged": "com.example.watercatcher.app-debug-24:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.example.watercatcher.app-main-26:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-debug-24:\\drawable_jar_round_bg.xml.flat",
-        "source": "C:\\Users\\PC\\.gradle\\daemon\\8.11.1\\com.example.watercatcher.app-main-26:\\drawable\\jar_round_bg.xml"
+        "merged": "com.example.watercatcher.app-debug-24:/drawable_ic_trophy.xml.flat",
+        "source": "com.example.watercatcher.app-main-26:/drawable/ic_trophy.xml"
+    },
+    {
+        "merged": "com.example.watercatcher.app-debug-24:/mipmap-hdpi_w_logo_foreground.webp.flat",
+        "source": "com.example.watercatcher.app-main-26:/mipmap-hdpi/w_logo_foreground.webp"
+    },
+    {
+        "merged": "com.example.watercatcher.app-debug-24:/mipmap-mdpi_w_logo_foreground.webp.flat",
+        "source": "com.example.watercatcher.app-main-26:/mipmap-mdpi/w_logo_foreground.webp"
+    },
+    {
+        "merged": "com.example.watercatcher.app-debug-24:/layout_activity_sensor_info.xml.flat",
+        "source": "com.example.watercatcher.app-main-26:/layout/activity_sensor_info.xml"
+    },
+    {
+        "merged": "com.example.watercatcher.app-debug-24:/mipmap-xhdpi_w_logo_round.webp.flat",
+        "source": "com.example.watercatcher.app-main-26:/mipmap-xhdpi/w_logo_round.webp"
     }
 ]
